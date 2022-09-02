@@ -1,0 +1,62 @@
+<img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/QILj4kKZMLW.png" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/FMv4tTIpfwB.png
+https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/ocBBGg-gRd5.png
+https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png
+https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png
+https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/kD5Sv0isIPs.png
+https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png
+https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/tYxGXJRPH5q.png
+https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png
+
+
+
+
+
+
+Chuyên nghiệp
+Trình quản lý quảng cáo
+Tạo, quản lý và theo dõi hiệu quả quảng cáo.
+Trung tâm quảng cáo
+Dùng các tính năng đơn giản hơn để quản lý mọi quảng cáo bạn tạo trên Trang.
+Nguồn lực cho cộng đồng
+Ứng phó khẩn cấp
+Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên thế giới.
+Sức khỏe cảm xúc
+Chiến dịch gây quỹ
+Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích cá nhân.
+Sản phẩm khác của Meta
+Messenger
+Chat ngay tức thì với bạn bè và những người đã kết nối.
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+</svg>
+
+filter = filter.replace(/A|Á|À|Ã|Ạ|Â|Ấ|Ầ|Ẫ|Ậ|Ă|Ắ|Ằ|Ẵ|Ặ/g, "A");
+		filter = filter.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+		filter = filter.replace(/E|É|È|Ẽ|Ẹ|Ê|Ế|Ề|Ễ|Ệ/, "E");
+		filter = filter.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+		filter = filter.replace(/I|Í|Ì|Ĩ|Ị/g, "I");
+		filter = filter.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+		filter = filter.replace(/O|Ó|Ò|Õ|Ọ|Ô|Ố|Ồ|Ỗ|Ộ|Ơ|Ớ|Ờ|Ỡ|Ợ/g, "O");
+		filter = filter.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+		filter = filter.replace(/U|Ú|Ù|Ũ|Ụ|Ư|Ứ|Ừ|Ữ|Ự/g, "U");
+		filter = filter.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+		filter = filter.replace(/Y|Ý|Ỳ|Ỹ|Ỵ/g, "Y");
+		filter = filter.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+		filter = filter.replace(/Đ/g, "D");
+		filter = filter.replace(/đ/g, "d");
+		filter = filter.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, ""); 
+		filter = filter.replace(/\u02C6|\u0306|\u031B/g, ""); 
