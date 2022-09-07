@@ -65,6 +65,8 @@ closeShow.addEventListener("click", () => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 });
@@ -101,6 +103,8 @@ modal.addEventListener("click", () => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 });
@@ -126,6 +130,8 @@ openMenu.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -162,6 +168,8 @@ openChat.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -175,6 +183,8 @@ closeChat.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -205,6 +215,8 @@ openNotify.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -218,6 +230,8 @@ closeNotify.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -248,6 +262,8 @@ openSetting.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -260,6 +276,8 @@ closeSetting.addEventListener("click", (e) => {
 	divSearch.setAttribute("style", "width: max-content");
 	if (window.innerWidth < 1024) {
 		labelText.setAttribute("style", "display:none !important");
+	}else{
+		labelText.setAttribute("style", "display:block !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
