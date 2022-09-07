@@ -18,7 +18,7 @@ function filterFunction2() {
 	filter = filter.replace(/đ/g, "d");
 	filter = filter.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, "");
 	filter = filter.replace(/\u02C6|\u0306|\u031B/g, "");
-	var list = document.querySelectorAll(".menu_category-lists");
+	var listMenu = document.querySelectorAll(".menu_category-lists");
 	var item = document.querySelectorAll(".menu_category-list-item");
 	var value_2 = document.querySelectorAll(".filter-menu");
 	for (let i = 0; i < value_2.length; i++) {
@@ -45,5 +45,18 @@ function filterFunction2() {
 			item[i].style.display = "none";
 		}
 	}
-
+	
+	// for(let i = 0; i < listMenu.length; i++){
+	// 	for (let j = 0; j < 20; j++) {
+	// 		if( j % 2 == 1){
+	// 			var listElm = []
+	// 			var result = !!(listMenu[i].childNodes[j].style.getPropertyValue("display") === "none")
+	// 			if (result) {
+	// 				listElm.push(listMenu[i].childNodes[j]);
+	// 			}
+	// 		}
+			
+	// 	}
+	// }
+	// console.log(listElm);
 }

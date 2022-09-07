@@ -1,32 +1,42 @@
 //History Action
-let actionInput = document.getElementById("input_search");
-let showHistory = document.querySelector(".history_search");
-let closeShow = document.querySelector(".history-search-close");
-let deleteShow = document.querySelectorAll(".history-item-delete");
-let activeLabel = document.querySelector(".form_label");
-let modal = document.querySelector("body");
+let actionInput = document.getElementById("input_search"),
+	divSearch = document.querySelector(".nav_search"),
+	showHistory = document.querySelector(".history_search"),
+	closeShow = document.querySelector(".history-search-close"),
+	deleteShow = document.querySelectorAll(".history-item-delete"),
+	activeLabel = document.querySelector(".form_label"),
+	labelText = document.querySelector(".form_label-text"),
+	modal = document.querySelector("body");
 
 //Menu Action
-let openMenu = document.querySelector(".nav_menu-icon");
-let showMenu = document.querySelector(".menu_container");
-let closeMenu = document.querySelector(".close_menu");
+let openMenu = document.querySelector(".nav_menu-icon"),
+	showMenu = document.querySelector(".menu_container"),
+	closeMenu = document.querySelector(".close_menu");
 //Messenger Action
-let openChat = document.querySelector(".nav_messenger-icon");
-let closeChat = document.querySelector(".close_messenger");
-let showChat = document.querySelector(".messenger_container");
+let openChat = document.querySelector(".nav_messenger-icon"),
+	closeChat = document.querySelector(".close_messenger"),
+	showChat = document.querySelector(".messenger_container");
 //Notify Action
-let openNotify = document.querySelector(".nav_notify-icon");
-let closeNotify = document.querySelector(".close_notify");
-let showNotify = document.querySelector(".notify_container");
+let openNotify = document.querySelector(".nav_notify-icon"),
+	closeNotify = document.querySelector(".close_notify"),
+	showNotify = document.querySelector(".notify_container");
 
 //user
-let openSetting = document.querySelector(".nav_user");
-let closeSetting = document.querySelector(".close_user");
-let showSetting = document.querySelector(".nav_user-container");
+let openSetting = document.querySelector(".nav_user"),
+	closeSetting = document.querySelector(".close_user"),
+	showSetting = document.querySelector(".nav_user-container");
 
 actionInput.addEventListener(
 	"click",
 	(e) => {
+		divSearch.setAttribute("style", "width: 25rem !important");
+		if (window.innerWidth < 1024) {
+			labelText.setAttribute("style", "display:block !important");
+			activeLabel.setAttribute(
+				"style",
+				"margin : 0 1.5rem;justify-content:flex-start"
+			);
+		}
 		showHistory.style.display = "block";
 		showChat.style.display = "none";
 		showMenu.style.display = "none";
@@ -52,13 +62,23 @@ showHistory.addEventListener("click", (event) => {
 });
 closeShow.addEventListener("click", () => {
 	showHistory.style.display = "none";
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 });
 
-deleteShow.forEach((item) =>{
-	item.addEventListener('click',()=>{
-		showHistory.style.display = "none"
-	})
-})
+deleteShow.forEach((item) => {
+	item.addEventListener("click", () => {
+		showHistory.style.display = "none";
+		divSearch.setAttribute("style", "width: max-content");
+		if (window.innerWidth < 1024) {
+			labelText.setAttribute("style", "display:none !important");
+		}
+		activeLabel.setAttribute("style", "margin : 0");
+	});
+});
 modal.addEventListener("click", () => {
 	showHistory.style.display = "none";
 	showSetting.style.display = "none";
@@ -78,6 +98,11 @@ modal.addEventListener("click", () => {
 	closeNotify.style.height = "0px";
 	closeSetting.style.width = "0px";
 	closeSetting.style.height = "0px";
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 });
 
 //open menu
@@ -98,7 +123,11 @@ openMenu.addEventListener("click", (e) => {
 	openMenu.classList.add("active_action");
 	openChat.classList.remove("active_action");
 	openNotify.classList.remove("active_action");
-
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 //close menu
@@ -130,6 +159,11 @@ openChat.addEventListener("click", (e) => {
 	openMenu.classList.remove("active_action");
 	openChat.classList.add("active_action");
 	openNotify.classList.remove("active_action");
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 //close chat
@@ -138,7 +172,11 @@ closeChat.addEventListener("click", (e) => {
 	closeChat.style.width = "0px";
 	closeChat.style.height = "0px";
 	openChat.classList.remove("active_action");
-
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 
@@ -164,7 +202,11 @@ openNotify.addEventListener("click", (e) => {
 	openMenu.classList.remove("active_action");
 	openNotify.classList.add("active_action");
 	openChat.classList.remove("active_action");
-
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 // close Notify
@@ -173,6 +215,11 @@ closeNotify.addEventListener("click", (e) => {
 	closeNotify.style.width = "0px";
 	closeNotify.style.height = "0px";
 	openNotify.classList.remove("active_action");
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 
@@ -198,6 +245,11 @@ openSetting.addEventListener("click", (e) => {
 	openMenu.classList.remove("active_action");
 	openNotify.classList.remove("active_action");
 	openChat.classList.remove("active_action");
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 // close Setting
@@ -205,6 +257,11 @@ closeSetting.addEventListener("click", (e) => {
 	showSetting.style.display = "none";
 	closeSetting.style.width = "0px";
 	closeSetting.style.height = "0px";
+	divSearch.setAttribute("style", "width: max-content");
+	if (window.innerWidth < 1024) {
+		labelText.setAttribute("style", "display:none !important");
+	}
+	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
 });
 
