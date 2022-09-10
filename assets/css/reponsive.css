@@ -2,12 +2,9 @@
   .nav_search {
     width: 25rem !important;
   }
-  .side-bar__left {
-    display: block !important;
-  }
 }
-@media screen and (max-width: 1024px) {
-  .side-bar__left {
+@media screen and (max-width: 1027px) {
+  .box-screen {
     z-index: 1000;
     display: none;
     position: absolute;
@@ -92,7 +89,10 @@
   .m-c__p-bottom {
     display: none;
   }
-  .notify_container, .messenger_container, .history_search, .nav_user-container {
+  .notify_container,
+.messenger_container,
+.history_search,
+.nav_user-container {
     width: 90vw !important;
     min-width: unset !important;
   }

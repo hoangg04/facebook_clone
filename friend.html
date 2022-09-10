@@ -15,6 +15,8 @@
         integrity="sha512-IOYVZe99ccDBYs/Q4bHcvZd+Sx6bshoMQktzI3Ts3PbKtFKsKGC9+FlliD8zhd+MgC8WdYSSImDy23rPzpEhmA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/friend.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>Facebook by Hoang</title>
 
 </head>
@@ -186,9 +188,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav_logo">
+                <a href="index.html" class="nav_logo">
                     <img src="./assets/img/facebook-new.png" alt="">
-                </div>
+                </a>
                 <div class="nav_search">
                     <input id="input_search" class="input_search" type="text" placeholder=" "
                         onkeyup="filterFunction1()">
@@ -200,7 +202,7 @@
                                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
                         </span>
-                        <span>Tìm kiếm trên Facebook</span>
+                        <span class="form_label-text">Tìm kiếm trên Facebook</span>
                     </label>
                 </div>
             </div>
@@ -249,6 +251,14 @@
                                 </path>
                             </svg>
                         </a>
+                    </li>
+                    <li class="nav_list-item nav_list-item-open">
+                        <div class="nav_list-item-close"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
                     </li>
                 </ul>
             </div>
@@ -307,7 +317,7 @@
                                         </a>
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png
-                                    " alt="">
+                                " alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Cộng đồng (Nhóm)</h6>
                                                 <span>Kết nối với những người cùng chung sở thích.</span>
@@ -347,7 +357,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Giải trí</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -378,14 +387,13 @@
                                         </a>
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/VhoyAd0w8bZ.png
-                                                                                                        " alt="">
+                                                                                                    " alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Video trực tiếp</h6>
                                                 <span>Xem video trực tiếp phổ biến từ khắp thế giới</span>
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Mua sắm</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -398,7 +406,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Cá nhân</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -426,7 +433,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Chuyên nghiệp</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -446,7 +452,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Nguồn lực cộng đồng</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -455,8 +460,7 @@
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Ứng phó khẩn cấp</h6>
                                                 <span>Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên
-                                                    thế
-                                                    giới.</span>
+                                                    thế giới.</span>
                                             </div>
                                         </a>
 
@@ -477,7 +481,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Sản phẩm khác của Meta</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -534,7 +537,7 @@
                                                 <h6>Phòng họp mặt</h6>
                                             </div>
                                         </a>
-                                        <hr>
+
                                         <a href="#" class="menu_action-item">
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1069,10 +1072,326 @@
     </header>
 
     <!------------------------------ END HEADER --------------------------------------------->
+
+    <main class="container">
+        <div class="box-screen">
+            <div class="hidden_scroll">
+                <ul class="bs__list--visible">
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="./assets/img/user.png" alt="">
+                            <h6 class="bs__list--item-text">Hoang Trong</h6>
+                        </a>
+                    </li>
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png" alt="">
+                            <h6 class="bs__list--item-text">Bạn bè</h6>
+                        </a>
+                    </li>
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png" alt="">
+                            <h6 class="bs__list--item-text">Cộng đồng (Nhóm)</h6>
+                        </a>
+                    </li>
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/kD5Sv0isIPs.png" alt="">
+                            <h6 class="bs__list--item-text">Gần đây nhất</h6>
+                        </a>
+                    </li>
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png" alt="">
+                            <h6 class="bs__list--item-text">Watch</h6>
+                        </a>
+                    </li>
+                    <li class="bs__list--item">
+                        <a href="#" class="bs__list--item-link">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/tYxGXJRPH5q.png" alt="">
+                            <h6 class="bs__list--item-text">Kỉ niệm</h6>
+                        </a>
+                    </li>
+        
+                </ul>
+                <ul class="bs__list--hide">
+                </ul>
+                <div class="bs__list--button">
+                    <div class="button_show">
+                        <div class="button_show-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+        
+                        </div>
+                        <span class="button_show-text">Xem thêm</span>
+                    </div>
+                    <div class="button_hide">
+                        <div class="button_hide-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                            </svg>
+                        </div>
+                        <span class="button_hide-text">Ẩn bớt</span>
+                    </div>
+                </div>
+                <ul class="bs__shortcut--list">
+                    <li class="bs__shortcut--list-title">Lối tắt của bạn</li>
+                    <li class="bs__shortcut--list-item">
+                        <a href="#" class="bs__shortcut--list-item-link">
+                            <img src="./assets/img/facebook-new.png" alt="">
+                            <h6 class="bs__shortcut--list-item-text">Công an huyện</h6>
+                        </a>
+                    </li>
+                    <li class="bs__shortcut--list-item">
+                        <a href="#" class="bs__shortcut--list-item-link">
+                            <img src="./assets/img/facebook-new.png" alt="">
+                            <h6 class="bs__shortcut--list-item-text">Vua màn hình ngang</h6>
+                        </a>
+                    </li>
+                    <li class="bs__shortcut--list-item">
+                        <a href="#" class="bs__shortcut--list-item-link">
+                            <img src="./assets/img/facebook-new.png" alt="">
+                            <h6 class="bs__shortcut--list-item-text">Hướng dẫn chơi fi fai</h6>
+                        </a>
+                    </li>
+                    <li class="bs__shortcut--list-item">
+                        <a href="#" class="bs__shortcut--list-item-link">
+                            <img src="./assets/img/facebook-new.png" alt="">
+                            <h6 class="bs__shortcut--list-item-text">Hướng dẫn đi chơi với gái</h6>
+                        </a>
+                    </li>
+                    <li class="bs__shortcut--list-item">
+                        <a href="#" class="bs__shortcut--list-item-link">
+                            <img src="./assets/img/facebook-new.png" alt="">
+                            <h6 class="bs__shortcut--list-item-text">Hội lái máy bay</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-bar_left">
+            <div class="sbl_title">
+                <h2 class="sbl_title-text">Bạn bè</h2>
+                <span class="sbl_title-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="sbl_action-lists">
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <svg viewBox="0 0 28 28" fill="currentColor" height="28"
+                            width="28">
+                            <path
+                                d="M20.34 22.428c.077-.455.16-1.181.16-2.18 0-1.998-.84-3.981-2.12-5.41-.292-.326-.077-.838.36-.838h2.205C24.284 14 27 16.91 27 20.489c0 1.385-1.066 2.51-2.378 2.51h-3.786a.496.496 0 01-.495-.571zM20 13c-1.93 0-3.5-1.794-3.5-4 0-2.467 1.341-4 3.5-4s3.5 1.533 3.5 4c0 2.206-1.57 4-3.5 4zm-9.5-1c-2.206 0-4-2.019-4-4.5 0-2.818 1.495-4.5 4-4.5s4 1.682 4 4.5c0 2.481-1.794 4.5-4 4.5zm2.251 2A6.256 6.256 0 0119 20.249v1.313A2.44 2.44 0 0116.563 24H4.438A2.44 2.44 0 012 21.562v-1.313A6.256 6.256 0 018.249 14h4.502z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="sbl_action-item-text">Trang chủ</div>
+                </div>
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <img src="./assets/img/RLP6DNroaNd.png" alt="">
+                    </div>
+                    <div class="sbl_action-item-text">Lời mời kết bạn</div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <img src="./assets/img/user-plus.png" alt="">
+                    </div>
+                    <div class="sbl_action-item-text">Gợi ý</div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <img src="./assets/img/user-setting.png" alt="">
+                    </div>
+                    <div class="sbl_action-item-text">Tất cả bạn bè</div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <ion-icon name="gift"></ion-icon>
+                    </div>
+                    <div class="sbl_action-item-text">Sinh nhật</div>
+                </div>
+                <div class="sbl_action-item">
+                    <div class="sbl_action-item-icon">
+                        <img src="./assets/img/RLP6DNroaNd.png" alt="">
+                    </div>
+                    <div class="sbl_action-item-text">Danh sách tuỳ chỉnh</div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="content hidden_scroll">
+            <div class="content_header-title">
+                <div class="content_header-title-text">Những người bạn có thể biết</div>
+                <a class="btn" href="#">Xem tất cả</a>
+            </div>
+            <div class="card_list">
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user1.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Thu Trang</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user2.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Thu Quỳnh</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user1.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user3.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Diệu Nhi</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user1.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user4.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Hà My</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user1.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Thu Trang</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user2.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Thu Quỳnh</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user1.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user3.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Diệu Nhi</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user1.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_item-avt">
+                        <img src="./assets/img/user/user4.jpeg" alt="">
+                    </div>
+                    <div class="card_item-content">
+                        <div class="card_item-content-name"><span>Hà My</span></div>
+                        <div class="card_item-content-friend-common">
+                            <span><img src="./assets/img/user/user2.jpeg" alt=""></span>
+                            <span><img src="./assets/img/user/user3.jpeg" alt=""></span>
+                            <span>24 bạn chung</span>
+                        </div>
+                        <div class="card_item-content-button">
+                            <a class="btn btn-primary" href="#">Thêm bạn bè</a>
+                            <a class="btn btn-sencondary delete-button" href="#">Xoá ,gỡ bỏ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
     <script src="./assets/js/activeButton.js"></script>
     <script src="./assets/js/visibleHitorySearch.js"></script>
     <script src="./assets/js/filterSearch.js"></script>
     <script src="./assets/js/filterMenu.js"></script>
+    <script src="./assets/js/activeTab.js"></script>
+    <script src="./assets/js/pickReaction.js"></script>
+    <script src="./assets/js/navTabMiddle.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/deleteFriend.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

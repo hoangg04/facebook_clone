@@ -1,0 +1,139 @@
+@import "variable";
+
+@media screen and (min-width: 1028px) {
+    .nav_search {
+        width: 25rem !important;
+    }
+
+}
+
+@media screen and (max-width: 1027px) {
+    .box-screen {
+        z-index: 1000;
+        display: none;
+        position: absolute;
+        top: 5.6rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary-input;
+    }
+
+    .nav_left {
+        width: auto !important;
+    }
+
+    .nav_middle {
+        padding: 0 15rem !important;
+
+        .nav_lists {
+            .nav_list-item {
+                &:nth-last-child(2) {
+                    display: none !important;
+                    // width: 0;
+                }
+
+                &:nth-last-child(1) {
+                    width: 20%;
+                    display: flex !important;
+                }
+
+                .nav_list-item.active {
+                    &:nth-last-child(1) {
+                        svg {
+                            stroke: $primary-button;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .nav_search {
+        min-width: 0 !important;
+        width: 4rem !important;
+
+        .form_label {
+            padding-left: 0.2rem !important;
+            justify-content: center;
+
+            span {
+                &:nth-child(2) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .side-bar-right {
+        width: 25rem;
+    }
+
+    .middle-container {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .side-bar-right {
+        display: none;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .nav_list-item {
+        &:nth-last-child(n+2) {
+            display: none;
+        }
+    }
+
+    .nav_middle {
+        padding: 0 10rem !important;
+        justify-content: flex-start !important;
+
+        .nav_lists {
+            justify-content: flex-start !important;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav_left {
+        width: 90vw !important;
+    }
+
+    .nav_middle {
+        margin-left: 10rem !important;
+        padding: 0 !important;
+    }
+
+    .mid-header__tab--list-item {
+        flex: none;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .pick__reaction-item {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+
+    .m-c__p-bottom {
+        display: none;
+    }
+
+    .notify_container,
+    .messenger_container,
+    .history_search,
+    .nav_user-container {
+        width: 90vw !important;
+        min-width: unset !important;
+    }
+}

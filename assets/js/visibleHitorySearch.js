@@ -30,8 +30,8 @@ actionInput.addEventListener(
 	"click",
 	(e) => {
 		divSearch.setAttribute("style", "width: 25rem !important");
-		if (window.innerWidth < 1024) {
-			labelText.setAttribute("style", "display:block !important");
+		if (window.innerWidth < 1028) {
+			labelText.setAttribute("style", "display:-webkit-box !important");
 			activeLabel.setAttribute(
 				"style",
 				"margin : 0 1.5rem;justify-content:flex-start"
@@ -63,10 +63,10 @@ showHistory.addEventListener("click", (event) => {
 closeShow.addEventListener("click", () => {
 	showHistory.style.display = "none";
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 });
@@ -75,7 +75,7 @@ deleteShow.forEach((item) => {
 	item.addEventListener("click", () => {
 		showHistory.style.display = "none";
 		divSearch.setAttribute("style", "width: max-content");
-		if (window.innerWidth < 1024) {
+		if (window.innerWidth < 1028) {
 			labelText.setAttribute("style", "display:none !important");
 		}
 		activeLabel.setAttribute("style", "margin : 0");
@@ -101,10 +101,10 @@ modal.addEventListener("click", () => {
 	closeSetting.style.width = "0px";
 	closeSetting.style.height = "0px";
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 });
@@ -128,10 +128,10 @@ openMenu.addEventListener("click", (e) => {
 	openChat.classList.remove("active_action");
 	openNotify.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -166,10 +166,10 @@ openChat.addEventListener("click", (e) => {
 	openChat.classList.add("active_action");
 	openNotify.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -181,10 +181,10 @@ closeChat.addEventListener("click", (e) => {
 	closeChat.style.height = "0px";
 	openChat.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -213,10 +213,10 @@ openNotify.addEventListener("click", (e) => {
 	openNotify.classList.add("active_action");
 	openChat.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -228,10 +228,10 @@ closeNotify.addEventListener("click", (e) => {
 	closeNotify.style.height = "0px";
 	openNotify.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -260,10 +260,10 @@ openSetting.addEventListener("click", (e) => {
 	openNotify.classList.remove("active_action");
 	openChat.classList.remove("active_action");
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -274,10 +274,10 @@ closeSetting.addEventListener("click", (e) => {
 	closeSetting.style.width = "0px";
 	closeSetting.style.height = "0px";
 	divSearch.setAttribute("style", "width: max-content");
-	if (window.innerWidth < 1024) {
+	if (window.innerWidth < 1028) {
 		labelText.setAttribute("style", "display:none !important");
-	}else{
-		labelText.setAttribute("style", "display:block !important");
+	} else {
+		labelText.setAttribute("style", "display:-webkit-box !important");
 	}
 	activeLabel.setAttribute("style", "margin : 0");
 	e.stopPropagation();
@@ -286,3 +286,12 @@ closeSetting.addEventListener("click", (e) => {
 showSetting.addEventListener("click", (event) => {
 	event.stopPropagation();
 });
+
+if (window.innerWidth > 1028) {
+	labelText.setAttribute("style", "display:-webkit-box !important");
+	// return true;
+}
+else{
+	labelText.setAttribute("style", "display:none !important");
+	// return true;
+}

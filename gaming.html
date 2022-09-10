@@ -15,8 +15,37 @@
         integrity="sha512-IOYVZe99ccDBYs/Q4bHcvZd+Sx6bshoMQktzI3Ts3PbKtFKsKGC9+FlliD8zhd+MgC8WdYSSImDy23rPzpEhmA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>Facebook by Hoang</title>
-
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding:5.6rem;
+            margin: 0 auto;
+            width: 100%;
+            user-select: none;
+        }
+        .error{
+            width: 10rem;
+            height:10rem;
+        }
+        .fs_24{
+            font-size: 2.4rem;
+        }
+        .fw_500{
+            font-weight: 500;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .fs_16{
+            font-size: 1.6rem !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,9 +59,10 @@
                         <span class="history-search-close">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                             </svg>
-        
+    
                         </span>
                     </div>
                     <div class="history_search-title">
@@ -52,7 +82,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -69,7 +99,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -83,7 +113,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -97,7 +127,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -111,7 +141,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -125,7 +155,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -139,7 +169,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -153,7 +183,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -167,7 +197,7 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                         <div class="history-list-item">
                             <div class="history-item-avatar">
@@ -181,13 +211,13 @@
                                     </svg>
                                 </div>
                             </div>
-        
+    
                         </div>
                     </div>
                 </div>
-                <div class="nav_logo">
+                <a href="index.html" class="nav_logo">
                     <img src="./assets/img/facebook-new.png" alt="">
-                </div>
+                </a>
                 <div class="nav_search">
                     <input id="input_search" class="input_search" type="text" placeholder=" " onkeyup="filterFunction1()">
                     <label for="input_search" class="form_label ">
@@ -198,7 +228,7 @@
                                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
                         </span>
-                        <span>Tìm kiếm trên Facebook</span>
+                        <span class="form_label-text">Tìm kiếm trên Facebook</span>
                     </label>
                 </div>
             </div>
@@ -247,6 +277,14 @@
                                 </path>
                             </svg>
                         </a>
+                    </li>
+                    <li class="nav_list-item nav_list-item-open">
+                        <div class="nav_list-item-close"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
                     </li>
                 </ul>
             </div>
@@ -302,7 +340,7 @@
                                         </a>
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png
-                                    " alt="">
+                                " alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Cộng đồng (Nhóm)</h6>
                                                 <span>Kết nối với những người cùng chung sở thích.</span>
@@ -338,7 +376,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Giải trí</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -366,14 +403,13 @@
                                         </a>
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/VhoyAd0w8bZ.png
-                                                                                                        " alt="">
+                                                                                                    " alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Video trực tiếp</h6>
                                                 <span>Xem video trực tiếp phổ biến từ khắp thế giới</span>
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Mua sắm</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -385,7 +421,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Cá nhân</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -410,7 +445,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Chuyên nghiệp</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -428,18 +462,17 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Nguồn lực cộng đồng</h5>
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/vG0kc45wHaG.png" alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Ứng phó khẩn cấp</h6>
-                                                <span>Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên thế
-                                                    giới.</span>
+                                                <span>Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên
+                                                    thế giới.</span>
                                             </div>
                                         </a>
-        
+    
                                         <a href="#" class="menu_category-list-item">
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/z2lQL_jKCWe.png" alt="">
                                             <div class="menu_category-list-item-text">
@@ -450,11 +483,11 @@
                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/FMv4tTIpfwB.png" alt="">
                                             <div class="menu_category-list-item-text">
                                                 <h6 class="filter-menu">Chiến dịch gây quỹ</h6>
-                                                <span>Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích cá nhân.</span>
+                                                <span>Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích cá
+                                                    nhân.</span>
                                             </div>
                                         </a>
                                     </div>
-                                    <hr>
                                     <div class="menu_category-lists">
                                         <h5>Sản phẩm khác của Meta</h5>
                                         <a href="#" class="menu_category-list-item">
@@ -478,7 +511,7 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                                                 </svg></span>
-        
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Đăng</h6>
                                             </div>
@@ -491,8 +524,8 @@
                                                         d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                                                 </svg>
                                             </span>
-        
-        
+    
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Tin</h6>
                                             </div>
@@ -505,12 +538,12 @@
                                                         d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
                                                 </svg>
                                             </span>
-        
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Phòng họp mặt</h6>
                                             </div>
                                         </a>
-                                        <hr>
+    
                                         <a href="#" class="menu_action-item">
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -519,8 +552,8 @@
                                                         d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
                                                 </svg>
                                             </span>
-        
-        
+    
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Trang</h6>
                                             </div>
@@ -533,8 +566,8 @@
                                                         d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
                                                 </svg>
                                             </span>
-        
-        
+    
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Quảng cáo</h6>
                                             </div>
@@ -547,7 +580,7 @@
                                                     </path>
                                                 </svg>
                                             </span>
-        
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Nhóm</h6>
                                             </div>
@@ -560,13 +593,13 @@
                                                         d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
                                                 </svg>
                                             </span>
-        
+    
                                             <div class="menu_action-item-text">
                                                 <h6>Sự Kiện</h6>
                                             </div>
                                         </a>
-        
-        
+    
+    
                                     </div>
                                 </div>
                             </div>
@@ -576,8 +609,8 @@
                 <div class="nav_messenger">
                     <div class="nav_messenger-icon">
                         <div class="close_messenger"></div>
-                        <svg viewBox="0 0 28 28" alt="" class="b6ax4al1 m4pnbp5e somyomsx ahndzqod g8r5yzqk" fill="currentColor"
-                            height="20" width="20">
+                        <svg viewBox="0 0 28 28" alt="" class="b6ax4al1 m4pnbp5e somyomsx ahndzqod g8r5yzqk"
+                            fill="currentColor" height="20" width="20">
                             <path
                                 d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z">
                             </path>
@@ -588,32 +621,32 @@
                             <h3>Chat</h3>
                             <div class="messenger_header-action">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="w-6 h-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                     </svg>
                                 </span>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="w-6 h-6">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                                     </svg>
                                 </span>
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="w-6 h-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round"
                                             d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
                                     </svg>
                                 </span>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="w-6 h-6">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                                     </svg>
                                 </span>
-        
+    
                             </div>
                         </div>
                         <div class="messenger_search">
@@ -636,7 +669,8 @@
                                     <span class="text-unread">Hoang Trong đã gửi 1 ảnh <span
                                             class="text-time">·12:24</span></span>
                                 </div>
-                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z" />
                                     </svg></span>
@@ -663,7 +697,8 @@
                                     <span>Người yêu bạn thân</span>
                                     <span class="text-unread">Yêu Anh<span class="text-time">·12:24</span></span>
                                 </div>
-                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z" />
                                     </svg></span>
@@ -676,7 +711,8 @@
                                     <span>Công An Hà Nội</span>
                                     <span class="text-unread">Lệnh triệu tập<span class="text-time">·12:24</span></span>
                                 </div>
-                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z" />
                                     </svg></span>
@@ -704,7 +740,8 @@
                                     <span class="text-unread">Em gai mua đã gửi 1 ảnh <span
                                             class="text-time">·12:24</span></span>
                                 </div>
-                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z" />
                                     </svg></span>
@@ -717,7 +754,8 @@
                                     <span>Người yêu</span>
                                     <span class="text-unread">Yêu Anh <span class="text-time">·12:24</span></span>
                                 </div>
-                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <span class="messenger_item-dot"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z" />
                                     </svg></span>
@@ -736,16 +774,16 @@
                                             d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
                                     </svg></span>
                             </div>
-        
+    
                         </div>
                     </div>
                 </div>
-        
+    
                 <div class="nav_notify">
                     <div class="nav_notify-icon">
                         <div class="close_notify"></div>
-                        <svg viewBox="0 0 28 28" alt="" class="b6ax4al1 m4pnbp5e somyomsx ahndzqod g8r5yzqk" fill="currentColor"
-                            height="20" width="20">
+                        <svg viewBox="0 0 28 28" alt="" class="b6ax4al1 m4pnbp5e somyomsx ahndzqod g8r5yzqk"
+                            fill="currentColor" height="20" width="20">
                             <path
                                 d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z">
                             </path>
@@ -756,8 +794,8 @@
                             <h3>Thông báo</h3>
                             <div class="notify_header-action">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="w-6 h-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                     </svg>
@@ -771,8 +809,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-unread">
@@ -790,8 +828,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-unread">
@@ -809,8 +847,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-unread">
@@ -828,8 +866,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-unread">
@@ -847,8 +885,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-unread">
@@ -866,8 +904,8 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-time">
@@ -881,15 +919,15 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-time">
                                         1 ngày
                                         trước</span>
                                 </div>
-        
+    
                             </div>
                             <div class="notify_chat-item">
                                 <div class="notify_item-avatar">
@@ -897,15 +935,15 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-time">
                                         1 ngày
                                         trước</span>
                                 </div>
-        
+    
                             </div>
                             <div class="notify_chat-item">
                                 <div class="notify_item-avatar">
@@ -913,15 +951,15 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-time">
                                         1 ngày
                                         trước</span>
                                 </div>
-        
+    
                             </div>
                             <div class="notify_chat-item">
                                 <div class="notify_item-avatar">
@@ -929,15 +967,15 @@
                                 </div>
                                 <div class="notify_item-content">
                                     <div class="notify_item-text">
-                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài viết<span
-                                                class="text-user"> Học lập
+                                        <span><span class="text-user">Lái máy bay bà già</span> đã thêm một bài
+                                            viết<span class="text-user"> Học lập
                                                 trình web(f8 - fullstack.edu.vn)</span> vào thứ Năm</span>
                                     </div>
                                     <span class="text-time">
                                         1 ngày
                                         trước</span>
                                 </div>
-        
+    
                             </div>
                         </div>
                     </div>
@@ -960,7 +998,8 @@
                                     stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                             </div>
                             <p class="user_setting-item-text">Cài đặt quyền riêng tư</p>
@@ -1030,62 +1069,62 @@
         </nav>
     </header>
 
+
+    
     <!------------------------------ END HEADER --------------------------------------------->
-    <!-- <style>
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            cursor: pointer;
-        }
-
-        img:hover {
-            opacity: 0.9;
-        }
-
-        .container1 {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-    </style>
-    <div class="container1">
-        <img id="feeling"
-            src="./assets/img/reaction/angrygif.gif"
-            alt="">
-        <p id='text'>Like</p>
-    </div>
-    <div class="list">
-        <img class="item" data-reaction="like"
-            src="https://congthucmau.com/wp-content/uploads/2021/09/Preset-Lightroom-Colorful-Pastel-3-768x924.jpg"
-            alt="">
-        <img class="item love" data-reaction="love"
-            src="https://congthucmau.com/wp-content/uploads/2021/09/Preset-Lightroom-Colorful-Pastel-2.jpg" alt="">
-        <img class="item thuongthuong" data-reaction="thuongthuong"
-            src="https://congthucmau.com/wp-content/uploads/2021/05/preset-lightroom-tone-xam-lanh-2-1-696x696.jpg"
-            alt="">
-        <img class="item sad" data-reaction="sad"
-            src="https://congthucmau.com/wp-content/uploads/2021/05/preset-lightroom-tone-xam-lanh-2-2-696x837.jpg"
-            alt="">
-        <img class="item angry" data-reaction="angry"
-            src="https://congthucmau.com/wp-content/uploads/2021/05/preset-lightroom-tone-xam-lanh-2-3-696x834.jpg"
-            alt="">
-        <img class="item haha" data-reaction="haha"
-            src="https://congthucmau.com/wp-content/uploads/2021/05/preset-lightroom-tone-xam-lanh-2-2-696x837.jpg"
-            alt="">
-    </div>
-
-    <script> -->
+    
+    <div class="container">
+        <svg class="error" xmlns="http://www.w3.org/2000/svg" id="_404" data-name="404" viewBox="0 0 112 112">
+            <defs>
+                <style>
+                    .cls-1,
+                    .cls-3 {
+                        fill: none;
+                        stroke-miterlimit: 10
+                    }
         
+                    .cls-1 {
+                        stroke: #64676b
+                    }
+        
+                    .cls-1,
+                    .cls-3 {
+                        stroke-linecap: round
+                    }
+        
+                    .cls-1 {
+                        stroke-width: 8px
+                    }
+        
+                    .cls-3 {
+                        stroke: #1876f2;
+                        stroke-width: 2px
+                    }
+                </style>
+            </defs>
+            <path class="cls-1"
+                d="M73.79 59.8a11.76 11.76 0 01-15.91 4.89A11.76 11.76 0 0153 48.78l14.4-27.2a11.77 11.77 0 0115.91-4.89 11.79 11.79 0 014.89 15.92l-4.38 8.26" />
+            <path
+                d="M20.09 92.53h0a11.77 11.77 0 011.28-16.6l23.37-20a11.77 11.77 0 0116.6 1.28h0a11.77 11.77 0 01-1.28 16.6l-6.38 5.47-6.31 5.4-10.68 9.13a11.77 11.77 0 01-16.6-1.28z"
+                stroke="#a4a7ab" stroke-width="8" fill="none" stroke-miterlimit="10" />
+            <path class="cls-1" d="M73.79 59.8a11.76 11.76 0 01-15.91 4.89 11.3 11.3 0 01-2.81-2.07" />
+            <path class="cls-3" d="M85.79 56.69l9.73-1.59M86.53 60.53l10.72 4.79M82.19 63.12l5.48 7.65" />
+        </svg>
+        <p class="text-user fs_24 fw_500">Trang này không hiển thị</p>
+        <p class="text-time text-center">Có thể liên kết đã hỏng hoặc trang đã bị gỡ. Hãy kiểm tra xem liên kết mà bạn đang cố mở có chính xác không.</p>
+        <a href="index.html" class="btn btn-primary fs_16 fw_500">Đi tới bảng tin</a>
+        <a href="index.html" class="text-unread fs_16 fw_500">Quay lại</a>
+        <a href="index.html" class="text-unread fs_16 fw_500">Truy cập Trung tâm trợ giúp</a>
+    </div>
 
 
-    </script>
     <script src="./assets/js/activeButton.js"></script>
     <script src="./assets/js/visibleHitorySearch.js"></script>
     <script src="./assets/js/filterSearch.js"></script>
     <script src="./assets/js/filterMenu.js"></script>
     <script src="./assets/js/activeTab.js"></script>
+    <script src="./assets/js/pickReaction.js"></script>
+    <script src="./assets/js/navTabMiddle.js"></script>
 
 </body>
 

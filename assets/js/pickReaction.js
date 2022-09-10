@@ -58,9 +58,9 @@ const listImg = [
 //     // console.log(el);
 // },true);
 imgItem.forEach(function (el) {
-	el.addEventListener("click", demo);
+	el.addEventListener("click", pick);
 });
-function demo(el) {
+function pick(el) {
 	let btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
 	let reaction = btn.getAttribute("data-reaction");
 	let content = listImg.filter((el) => {
